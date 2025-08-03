@@ -134,7 +134,7 @@ const DishesPage = () => {
       {currentItems.length === 0 ? (
         <p className="text-center text-gray-500">No dishes found.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-0 ml-[100px] sm:ml-[20px] md:ml-[0px] lg:ml-[35px]  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-0 ml-[100px]  md:ml-[0px] lg:ml-[35px]  ">
           {currentItems.map(dish => (
             <div key={dish.id} className="relative border border-gray-200 h-[360px] w-[240px] rounded-2xl bg-white shadow-lg p-4 mb-10">
               <img src={dish.image} alt={dish.name} className="h-40 w-full object-cover rounded-md mb-4" />

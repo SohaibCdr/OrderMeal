@@ -38,13 +38,13 @@ const Navbar = () => {
         
 
         {/* Center: Logo */}
-        <div className="flex items-center gap-2 mb-4 md:mb-0 lg:mr-[245px]  lg:ml-0 ">
+        <div className="flex items-center gap-2 mb-4 md:mb-0 lg:mr-[245px]  lg:ml-0 ml-[50px]">
           <Link to="/">
             <img src={logo} alt="logo" className="w-[60px]" />
           </Link>
           <h1 className="font-bold text-2xl font-serif tracking-wide">ORDER MEAL</h1>
         </div>
-        <div className="flex items-center gap-4 mb-4 md:mb-0  mr-[390px]  lg:ml-0">
+        <div className="flex items-center gap-4 mb-4 md:mb-0  mr-[390px]  lg:ml-0 ml-[50px]">
           <NavLink
             to="/"
             end
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
     
         {/* Right: Icons */}
-        <div className="flex items-center gap-5 mb-4 lg:mb-0 ml-20 lg:ml-0">
+        <div className="flex items-center gap-5 mb-4 lg:mb-0  lg:ml-0 ml-[140px]">
           <button onClick={handleHeartClick}>
             <Heart
               className={`w-5 h-5 transition cursor-pointer ${
