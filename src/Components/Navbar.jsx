@@ -32,19 +32,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-white shadow-md mt-2 lg:mt-0 z-20 ">
+    <nav className="flex w-full bg-white shadow-md mt-2 lg:mt-0 z-20 items-center ">
       <div className="container mx-auto flex items-center justify-between px-6 flex-wrap ">
         {/* Left: Navigation links */}
         
 
         {/* Center: Logo */}
-        <div className="flex items-center gap-2 mb-4 md:mb-0 lg:mr-[245px] ml-20 lg:ml-0 ">
+        <div className="flex items-center gap-2 mb-4 md:mb-0 lg:mr-[245px]  lg:ml-0 ">
           <Link to="/">
             <img src={logo} alt="logo" className="w-[60px]" />
           </Link>
           <h1 className="font-bold text-2xl font-serif tracking-wide">ORDER MEAL</h1>
         </div>
-        <div className="flex items-center gap-4 mb-4 md:mb-0  mr-[390px] ml-20 lg:ml-0">
+        <div className="flex items-center gap-4 mb-4 md:mb-0  mr-[390px]  lg:ml-0">
           <NavLink
             to="/"
             end
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
     
         {/* Right: Icons */}
-        <div className="flex items-center gap-5 mb-4 lg:mb-0 ml-40 lg:ml-0">
+        <div className="flex items-center gap-5 mb-4 lg:mb-0 ml-20 lg:ml-0">
           <button onClick={handleHeartClick}>
             <Heart
               className={`w-5 h-5 transition cursor-pointer ${
